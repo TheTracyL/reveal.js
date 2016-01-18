@@ -35,7 +35,7 @@
 
 			// The "normal" size of the presentation, aspect ratio will be preserved
 			// when the presentation is scaled to fit different resolutions
-			width: 960,
+			width: 1170,
 			height: 700,
 
 			// Factor of the display size that should remain empty around the content
@@ -46,10 +46,10 @@
 			maxScale: 1.5,
 
 			// Display controls in the bottom right corner
-			controls: true,
+			controls: false,
 
 			// Display a presentation progress bar
-			progress: true,
+			progress: false,
 
 			// Display the page number of the current slide
 			slideNumber: false,
@@ -125,10 +125,10 @@
 			focusBodyOnPageVisibilityChange: true,
 
 			// Transition style
-			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transition: 'fade', // none/fade/slide/convex/concave/zoom
 
 			// Transition speed
-			transitionSpeed: 'default', // default/fast/slow
+			transitionSpeed: 'fast', // default/fast/slow
 
 			// Transition style for full page slide backgrounds
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
