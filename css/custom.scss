@@ -1,3 +1,57 @@
+
+@import 'partials/mixins';
+
+/*********************************************
+ * FONTS
+ *********************************************/
+
+
+// Font Awesome 
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../lib/font/font-awesome/fontawesome-webfont.eot');
+  src: url('../lib/font/font-awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), 
+  url('../lib/font/font-awesome/fontawesome-webfont.woff2') format('woff2'), 
+  url('../lib/font/font-awesome/fontawesome-webfont.woff') format('woff'), 
+  url('../lib/font/font-awesome/fontawesome-webfont.ttf') format('truetype'), 
+  url('../lib/font/font-awesome/fontawesome-webfont.svg#svgFontAwesome') format('svg');
+}
+
+
+/*********************************************
+ * GLOBAL
+ *********************************************/
+
+.reveal blockquote {
+	font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+	width: 100%;
+
+	&:before {
+		@include fontawesome("\f10d");
+		margin-right: 0.4em;
+	}
+
+	&:after {
+		@include fontawesome("\f10e");
+		margin-left: 0.4em;
+	}
+}
+
+
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+
+.reveal section img.plain {
+  background: transparent;
+ }
+
+
 /*********************************************
  * Footer
  *********************************************/
